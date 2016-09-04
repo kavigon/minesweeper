@@ -76,7 +76,7 @@
         If findMine(row, colum) = True Then
             btnArray(row, colum).Text = "M"
             btnArray(row, colum).Enabled = False
-            MsgBox("BoooooooooooM")
+            MessageBox.Show("BoooooooooooM")
         Else
             For i As Integer = 0 To 7
                 If findMine(row + xDirection(i), colum + yDirection(i)) Then
